@@ -2,7 +2,6 @@ from configparser import Interpolation
 import streamlit as st
 import controllers.gastoController as GastoController
 import models.gasto as Gasto
-import pandas as pd
 import Pages.Gastos.incluir as IncluirGastos
 import Pages.Gastos.consultar as ConsultarGastos
 
