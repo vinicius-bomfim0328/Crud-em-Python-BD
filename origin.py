@@ -8,9 +8,10 @@ import Pages.Gastos.consultar as ConsultarGastos
 
 
 st.sidebar.title("Menu")
-Page_Gastos = st.sidebar.selectbox('Gestão de Patrimônio', ['Incluir', 'Alterar', 'Excluir', 'Consultar'])
+Page_Gastos = st.sidebar.selectbox('Gestão de Patrimônio', ['Incluir', 'Consultar'])
 
 if Page_Gastos == 'Incluir':
+    st.experimental_set_query_params()
     IncluirGastos.Incluir()
 
 if Page_Gastos == 'Consultar':
